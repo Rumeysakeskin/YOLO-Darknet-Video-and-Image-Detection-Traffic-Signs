@@ -15,3 +15,33 @@ After images of Traffic Signs were downloaded,
   ├── ts_data.data
   ├── classes.names
 ```
+These files' formats are as following:
+
+`train.txt and test.txt`
+```python
+/content/FullIJCNN2013/00539.jpg
+/content/FullIJCNN2013/00207.jpg
+/content/FullIJCNN2013/00075.jpg
+.
+.
+.
+```
+
+`classes.names`
+```python
+prohibitory
+danger
+mandatory
+other
+```
+
+`ts_data.data`
+```python
+classes = 4
+train = /content/FullIJCNN2013/train.txt
+valid = /content/FullIJCNN2013/test.txt
+names = /content/FullIJCNN2013/classes.names
+backup = backup
+```
+
+

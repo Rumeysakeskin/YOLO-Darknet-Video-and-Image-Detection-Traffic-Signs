@@ -62,6 +62,6 @@ classes = 4
 batch = 32 (training), 1 (testing)
 subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in one batch)
 ```
-
+- Prepare `yolov3_train.cfg` and `yolov3_test.cfg` files according to your custom dataset following above instructions.
 
 

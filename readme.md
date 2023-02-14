@@ -53,7 +53,7 @@ backup = backup
          
 `steps = 80% and 90% of max batches (max batches represent total number of iterations for training)`
 
-- For traffic sign dataset:
+For traffic sign dataset:
 ```python
 filters = (4 + 5) * 3 = 27
 max_batches = 4 * 2000 = 8000

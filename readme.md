@@ -44,7 +44,7 @@ names = /content/FullIJCNN2013/classes.names
 backup = backup
 ```
 
-### Training
+### Setting up Configuration Files
 
 [yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg) includes parameters for training, structure of CNN layers, last three YOLO layers.
 
@@ -59,7 +59,7 @@ backup = backup
 filters = (4 + 5) * 3 = 27
 max_batches = 4 * 2000 = 8000
 steps = 6400, 7200
-
+classes = 4
 batch = 32 (training), 1 (testing)
 subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in one batch)
 ```

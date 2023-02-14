@@ -24,7 +24,6 @@ These files' formats are as following:
 /content/FullIJCNN2013/00075.jpg
 .
 .
-.
 ```
 
 `classes.names`

@@ -44,4 +44,25 @@ names = /content/FullIJCNN2013/classes.names
 backup = backup
 ```
 
+### Training
+
+[yolov3.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3.cfg) includes parameters for training, structure of CNN layers, last three YOLO layers.
+
+`filters = (classes + coordinates + 1) * masks`
+
+`max_batches = classes * 2000 (not less than 4000)`
+         
+`steps = 80% and 90% of max batches (max batches represent total number of iterations for training)`
+
+- For traffic sign dataset:
+```python
+filters = (4 + 5) * 3 = 27
+max_batches = 4 * 2000 = 8000
+steps = 6400, 7200
+
+batch = 32 (training), 1 (testing)
+subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in one batch)
+```
+
+
 

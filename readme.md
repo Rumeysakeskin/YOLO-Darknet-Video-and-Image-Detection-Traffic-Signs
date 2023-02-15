@@ -24,7 +24,6 @@ These files' formats are as following:
 /content/FullIJCNN2013/00075.jpg
 .
 .
-.
 ```
 
 `classes.names`
@@ -54,7 +53,7 @@ backup = backup
          
 `steps = 80% and 90% of max batches (max batches represent total number of iterations for training)`
 
-- For traffic sign dataset:
+For traffic sign dataset:
 ```python
 filters = (4 + 5) * 3 = 27
 max_batches = 4 * 2000 = 8000
@@ -63,6 +62,6 @@ classes = 4
 batch = 32 (training), 1 (testing)
 subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in one batch)
 ```
-
+- Prepare `yolov3_train.cfg` and `yolov3_test.cfg` files according to your custom dataset following above instructions.
 
 

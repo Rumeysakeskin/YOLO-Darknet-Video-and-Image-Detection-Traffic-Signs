@@ -1,7 +1,7 @@
 ### Download Traffic Sign Dataset
 In this project, [German Traffic Sign Detection Benchmark Dataset](https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html) was used. Dataset includes the 900 training images (1360 x 800 pixels) in PPM format, the image sections containing only the traffic signs, a file in CSV format with the ground truth, and a ReadMe.txt with more details.
 
-Note: Do not need to the download dataset, we will download it and execute all following process in the `prepare_dataset_for_YOLO_format.ipynb` :partying_face:	 
+Note: Do not need to the download dataset, we will download it and execute all following process in the `traffic_sign_detection_YOLOv3_Darknet.ipynb` :partying_face:	 
 
 ### Installing Darknet
 Darknet is an open-source neural network framework. We will use it to train the pre-trained weights.

@@ -101,7 +101,7 @@ Continue checking for all weights in order to define the weights with biggest mA
 
 ### Testing
 
-- Put `traffic-sign-to-test.mp4` under the `darknet/data/`, and `yolov3_train_1000.weights` to `darknet/weights/` location.
+- Put `traffic-sign-test.mp4` under the `darknet/data/`, and `yolov3_train_1000.weights` to `darknet/weights/` location.
 ```python
-!./darknet detector demo cfg/ts_data.data cfg/yolov3_ts_test.cfg weights/yolov3_train_1000.weights data/traffic-sign-to-test.mp4 -out_filename traffic-sign-to-test.avi -dont_show
+!./darknet detector demo cfg/ts_data.data cfg/yolov3_ts_test.cfg weights/yolov3_train_1000.weights data/traffic-sign-test.mp4 -out_filename traffic-sign-to-test.avi -dont_show
 ```

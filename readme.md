@@ -62,6 +62,38 @@ classes = 4
 batch = 32 (training), 1 (testing)
 subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in one batch)
 ```
-- Prepare `yolov3_train.cfg` and `yolov3_test.cfg` files according to your custom dataset following above instructions.
+- Prepare `yolov3_train.cfg` and `yolov3_test.cfg` files according to your custom dataset following above instructions and put under the `darknet/cfg/` location.
+
+### Training YOLOv3 in Darknet Framework
+After preparation of all files we will the the custom dataset with following command:
+```python
+!./darknet detector train cfg/ts_data.data cfg/yolov3_train.cfg darknet53.conv.74 -dont_show
+```
+
+
+### How to define the best weights after training?
+
+Weights will be saved every 100 iterations in the following path. Now, we will define the best one to use for detection making sure that there is no overfitting.
+```python
+├── darknet/
+    ├── backup/
+        ├── yolov3_train_1000.weights
+        ├──   ...
+        ├── yolov3_train_last.weights
+        ├── yolov3_train_final.weights
+```
+
+There is special command in Darknet framework that calculates mAP.
+```python
+!./darknet detector map cfg/ts_data.data cfg/yolov3_ts_train.cfg backup/yolov3_train_1000.weights
+```
+Continue checking for all weights in order to define the weights with biggest mAP.
+
+### Testing
+
+- Put `traffic-sign-test.mp4` under the `darknet/data/`, and `yolov3_train_1000.weights` to `darknet/weights/` location.
+```python
+!./darknet detector demo cfg/ts_data.data cfg/yolov3_ts_test.cfg weights/yolov3_train_1000.weights data/traffic-sign-test.mp4 -out_filename traffic-sign-to-test.avi -dont_show
+```
 
 

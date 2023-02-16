@@ -65,7 +65,7 @@ subdivisions = 16 (training), 1 (testing) - (represent number of minibatches in 
 - Prepare `yolov3_train.cfg` and `yolov3_test.cfg` files according to your custom dataset following above instructions and put under the `darknet/cfg/` location.
 
 ### Training YOLOv3 in Darknet Framework
-After preparation of all files we will the the custom dataset with following command:
+After preparation of all files we will train the the custom dataset with following command:
 ```python
 !./darknet detector train cfg/ts_data.data cfg/yolov3_train.cfg darknet53.conv.74 -dont_show
 ```
@@ -96,4 +96,9 @@ Continue checking for all weights in order to define the weights with biggest mA
 !./darknet detector demo cfg/ts_data.data cfg/yolov3_ts_test.cfg weights/yolov3_train_1000.weights data/traffic-sign-test.mp4 -out_filename traffic-sign-to-test.avi -dont_show
 ```
 
+### Inference on Image
+
+Open the `traffic_sign_image_detection.ipynb` notebook and run the script for your test image. 
+
+<img src="result.jpg" width="500" height="270">
 

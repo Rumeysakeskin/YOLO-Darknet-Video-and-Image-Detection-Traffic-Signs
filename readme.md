@@ -98,7 +98,7 @@ Continue checking for all weights in order to define the weights with biggest mA
 
 ### Inference on Image
 
-Open the `traffic_sign_image_detection.ipynb` colab notebook and run the script for your test image.
+Open the `traffic_sign_image_detection.ipynb` notebook and run the script for your test image. 
 
 <img src="result.jpg" width="500" height="270">
 

@@ -1,3 +1,5 @@
+https://user-images.githubusercontent.com/61134521/219378894-542e6c51-8447-4427-94c7-af4a1a0dba69.mp4
+
 ### Download Traffic Sign Dataset
 In this project, [German Traffic Sign Detection Benchmark Dataset](https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html) was used. Dataset includes the 900 training images (1360 x 800 pixels) in PPM format, the image sections containing only the traffic signs, a file in CSV format with the ground truth, and a ReadMe.txt with more details.
 
@@ -97,8 +99,15 @@ Continue checking for all weights in order to define the weights with biggest mA
 ```
 
 ### Inference on Image
-
 Open the `traffic_sign_image_detection.ipynb` notebook and run the script for your test image. 
 
 <img src="result.jpg" width="500" height="270">
+
+### Inference on Video
+Open the `traffic_sign_detection_on_video.ipynb` notebook and run the script for your test video.
+
+https://user-images.githubusercontent.com/61134521/219378894-542e6c51-8447-4427-94c7-af4a1a0dba69.mp4
+
+
+
 

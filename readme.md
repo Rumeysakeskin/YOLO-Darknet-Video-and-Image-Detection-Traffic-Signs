@@ -1,3 +1,5 @@
+YOLO Darknet: Traffic sign detection on image and video
+
 ![result_traffic_sign](https://user-images.githubusercontent.com/61134521/219385677-b7214329-4aea-46c0-864a-3cee3847d100.gif)
 
 ### Download Traffic Sign Dataset

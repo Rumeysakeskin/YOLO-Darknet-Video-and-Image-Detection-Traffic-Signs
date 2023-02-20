@@ -9,16 +9,21 @@ Note: Do not need to the download dataset, we will download it in `training_YOLO
 
 ### Converting Traffic Sign Dataset in YOLO Format
 Open `training_YOLOv3_Darknet.ipynb` in Colab and run the code.
-After images of Traffic Signs were downloaded,
 
-- Convert annotations
-- Prepare the following files needed for training in Darknet framework:
+- In the YOLO format, every image in the dataset has a single text file. If an image has no objects there is no text file for that image. 
+```python
+images
+→ 0001.jpg
+labels
+→ 0001.txt
+```
+- Inside the text file, each row contains the following information:
+The first element of each row is a class id, then bounding box properties (x, y, width, height). Bounding box properties must be normalized (0–1). (x, y) should be the mid-points of a box.
 
-In the YOLO format, every image in the dataset has a single text file. If an image has no objects there is no text file for that image. Inside the text file, each row contains the following information:
 ```python
 class_id, x_centre,  y_centre,  width,  height
 ```
-
+Also we need to create the following files before training:
 ```python
   ├── train.txt
   ├── test.txt
